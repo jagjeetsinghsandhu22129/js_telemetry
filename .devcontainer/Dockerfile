@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/vscode/devcontainers/python
+FROM mcr.microsoft.com/devcontainers/python
 
 RUN apt update 
 
