@@ -1,8 +1,6 @@
 FROM mcr.microsoft.com/devcontainers/python
 
-RUN apt update 
-
-RUN apt install -y ansible
+RUN pip install ansible
 
 COPY hosts /etc/ansible/hosts
 
