@@ -17,11 +17,9 @@
                 "streetsidesoftware.code-spell-checker",
                 "ms-python.autopep8",
                 "dbaeumer.vscode-eslint",
-                "ritwickdey.LiveServer",
                 "ms-python.vscode-pylance",
                 "ms-python.python",
-                "ms-python.debugpy",
-                "REditorSupport.r"
+                "ms-python.debugpy"
             ]
         }
     }
