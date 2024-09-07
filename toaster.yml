@@ -13,14 +13,14 @@
     kubernetes.core.k8s:
       state: present
       src: ./kube/admin-user.yml
-  - name: Add dashboard chart repo
+  - name: Add demo chart repo
     kubernetes.core.helm_repository:
-      name: kubernetes-dashboard
-      repo_url: "https://kubernetes.github.io/dashboard"
-  - name: Deploy latest version of Kubernetes dashboard
+      name: open-telemetry
+      repo_url: "https://open-telemetry.github.io/opentelemetry-helm-charts"
+  - name: Deploy latest version of Opentelemetry demo
     kubernetes.core.helm:
-      name: dashboard
-      chart_ref: kubernetes-dashboard/kubernetes-dashboard
+      name: my-otel-demo
+      chart_ref: open-telemetry/opentelemetry-demo
       release_namespace: default
 
 

@@ -1,5 +1,5 @@
-# INFO8995-observability
-run kubernetes dashboard in codespace
+# INFO8995-telemetry
+run open telemetry demo in codespace
 
 TLDR;
 
