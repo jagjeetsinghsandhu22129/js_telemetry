@@ -5,18 +5,7 @@ TLDR;
 
 ```
 ansible-playbook toaster.yml
-kubectl get pods
-```
-Then with the 0th pod, dashboard-kong-68687498db-5jk5m in my case run:
-
-```
-kubectl -n default port-forward dashboard-kong-68687498db-5jk5m 8443:8443
-```
-
-You will need a bearer token to access the dashboard. Open a 2nd terminal window and run:
-
-```
-kubectl -n default create token admin-user
+kubectl port-forward svc/my-otel-demo-frontendproxy 8080:8080
 ```
 
 If you need to delete a cluster and start over you can run:
@@ -32,7 +21,7 @@ Note: This also works (faster) in vscode local with docker desktop installed.
 
 1. From the command palette `Dev Containers: Clone Repository in Container Volume`. 
 
-2. Choose this repository `https://github.com/rhildred/INFO8985-observability.git`. 
+2. Choose this repository `https://github.com/rhildred/INFO8985-telemetry.git`. 
 
 3. Follow the steps from TLDR;
 
